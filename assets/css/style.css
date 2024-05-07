@@ -1,0 +1,35 @@
+#canvas {
+	border: 1px solid white;	
+}
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f5f5f5;
+	font-family: Arial, sans-serif;
+	background-image: url(../img/body-bg.jpg);
+}
+canvas {
+	border: 2px solid #333;
+	border-radius: 10px;
+	margin-right: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border:1px solid white;	
+}
+#play-again {
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+#play-again:hover {
+	background-color: #9d30c9;
+}
