@@ -179,6 +179,20 @@ window.addEventListener("keyup", function (event) {
     }
 });
 
+// Detect if the game is loaded from a mobile device
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+// Function to focus on the hidden input if it's a mobile device
+function focusMobileInput() {
+    const mobileInput = document.getElementById("mobileInput");
+    if (isMobile) {
+        mobileInput.focus();
+    }
+}
+
+// Call the function when the page is loaded
+window.addEventListener("load", focusMobileInput);
+
 // Initialize the game and start the animation loop
 initGame();
 animate();
